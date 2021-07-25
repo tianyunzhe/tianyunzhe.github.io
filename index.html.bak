@@ -119,7 +119,7 @@
 		<p>We propose an advanced robust adversarial example generation attack, avoiding not to be filtered as well as causing false classification (<a href="https://ieeexplore.ieee.org/document/9359196">Tian et al, ICPADS'20</a>). We first define four basic data correlations called strict linear constraint, approximate linear constraint, addition boundary constraint and zero multiplication constraint. Then, based on embedding multiple data correlations into one constraint matrix from the Pearson analysis, our approach can enable a Hadamard product of the constraint matrix and the sign of gradient matrix to craft perturbations, keeping consistent data correlations. Experimental results on intrusion detection system demonstrate the superiority of our constraint-based adversarial example generation, especially in terms of keeping data constraints. </p>
     </div>
 <br>
-
+<!--  
     <a name="publication"></a>
 
     <div class="container">
@@ -180,7 +180,7 @@
             [<a href="works/others/psolp.pdf">PDF</a>]
         </li>
 
-<!--          <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
+        <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
         Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
         In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'18).</i>
         </li>
