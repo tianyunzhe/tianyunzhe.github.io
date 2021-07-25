@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiarong Xu - Zhejiang University">
+    <meta name="author" content="">
+    <!--<link rel="shortcut icon" href="img/homeicon.png"> -->
+
+    <title>Yunzhe Tian's Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
+          <a class="navbar-brand" href="#">Yunzhe Tian(田蕴哲)</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#award">Awards</a></li> -->
+        </ul>
+
+          <!--
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img height="200" src="img/tianyunzhe.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px">
+        <p></p>
+        <p> I am a first-year graduate student at Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu</a> in <a href="http://infosec.bjtu.edu.cn/">Department of Information Security</a>, <a href="http://computer.bjtu.edu.cn/"> School of Computer Science and Information Technology</a>.
+        </p>
+		<p>I obtained my bachelor degree at Beijing Information Science & Technology University in 2020. And, I fortunately have been visiting Tsinghua University (co-advised by <a href="http://keg.cs.tsinghua.edu.cn/persons/ljz/">Prof. Juanzi Li</a> and Dr. Peng Zhang) from Nov, 2018 to June, 2020. During my time at Tsinghua, I completed my undergraduate dissertation: "Research on News Entity Open Relation Extraction", awarded Excellent Undergraduate Thesis of Beijing City. </p>
+        <p>My research interests lie in AI security including adversarial examples, robust reinforcement learning and robust graph neural network. Here is my <a href="works/CV/resume.pdf"> CV </a>.</p>
+        <p> <b> Email:</b> tianyunzhe {at} bjtu [dot] edu [dot] cn </p>
+
+      </div>
+    </div>
+
+    <a name="research"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Research Work</h2>
+        </div>
+      
+        <div class="page-header">
+            <h4>Robust Graph Neural Network</h4>
+        </div>
+        <img width="450" src="works/parallel attack with title.png" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px" >
+      
+        <p>
+          Network data such as socialnet, becomes an important component in real life, drawing a lot of study issues of security and safety. Recently, adversarial attacks on GNN (Graph Neural Network) are exposed. By generating unnoticeable adversarial perturbations targeting the node's features and the graph structure, the performance of GNN is greatly dropped on graph-related tasks such as node classification, link prediction and community detection.<br><br>
+          
+          Existing automatic attack methods are developed for per-node attacks, which can only be utilized for multi-node attacks in a sequential way. However, due to the overlook of perturbation influence between different per-node attacks, existing sequential method does not guarantee a global attack success rate for all target nodes, under a fixed budget of perturbation. Motivated by this, we propose a parallel adversarial attack framework on node classification (<a href="https://downloads.hindawi.com/journals/scn/2021/6631247.pdf">Tian et al, SCN'21</a>). Firstly, based on FGA and NETTACK, we redesign new loss function and objective function aimed at multi-target parallel adversarial attack, and propose node filtering-based P-FGA and P-NETTACK. Then, through constructing intersection and supplement mechanisms of perturbations, we integrate P-FGA and P-NETTACK in a unified framework, finally realizing effective parallel adversarial attacks.<br><br>
+          
+          Besides, as adversarial attack poses potential threats to GNN models, it is very urgent to improve their robustness. Recently, we are investigating to improve the robustness of GNN via curricular adversarial training, which will be the main part of my Master's Dissertation. <br><br>
+         </p>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h4>Robust Reinforcement Learning</h4>
+        </div>
+        <img width="450" src="works/CarRacing_with_title.png" align="left" style="margin-left:20px;margin-right:20px">
+        <p> Due to the gap between lab simulation and real world, robust reinforcement learning has been a challenging problem. Existing efforts approached this problem through performing random environmental perturbation in learning process. However, one cannot guarantee perturbation is positive. Bad ones might bright failures to reinforcement learning. </p>
+		<p>In our recent work, we treat robust reinforcement learning as a multi-task reinforcement learning problem, and propose a curricular robust reinforcement learning approach. We first present a GAN-based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Further, with these progressive tasks, we can realize curricular learning and finally get a robust policy. </p>
+		<p>Demo we implemented in unmanned CarRacing game validates the effectiveness (<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf">Tian et al, AutoSec'21</a>). And we also demonstrate our method in multiple environments of OpenAI toolkits with MuJoCo physics simulator, such as Hopper, HalfCheetah and InvertedPendulum. </p>
+    </div>
+
+	<div class="container">
+        <div class="page-header">
+            <h4>Adversarial Examples Generation</h4>
+        </div>
+        <img width="450" src="works/constraints.png" align="left" style="margin-left:20px;margin-right:20px">
+        <p> Adversarial example, an input that is modified slightly to cause a machine learning system to produce erroneous outputs, has seen significant studies recently.</p>
+		<p> Unfortunately, the fine data perturbation of adversarial examples ignores to keep potential data correlations between feature pairs. Thus, such adversarial examples will be easily filtered by configuring data correlations as basic filtering rules.</p>
+		<p>We propose an advanced robust adversarial example generation attack, avoiding not to be filtered as well as causing false classification (<a href="https://ieeexplore.ieee.org/document/9359196">Tian et al, ICPADS'20</a>). We first define four basic data correlations called strict linear constraint, approximate linear constraint, addition boundary constraint and zero multiplication constraint. Then, based on embedding multiple data correlations into one constraint matrix from the Pearson analysis, our approach can enable a Hadamard product of the constraint matrix and the sign of gradient matrix to craft perturbations, keeping consistent data correlations. Experimental results on intrusion detection system demonstrate the superiority of our constraint-based adversarial example generation, especially in terms of keeping data constraints. </p>
+    </div>
+<br>
+
+    <a name="publication"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Publication List</h2>
+        </div>
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Shiliang Pu, Yao Fu, Jun Feng, Weihao Jiang, Jiangang Lu and Cunping Wang.
+        NetRL: Task-aware Network Denoising via Deep Reinforcement Learning. 
+        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021.</i>  [<a href="works/tkde2021_netrl_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/NetRL">Code</a>]
+        </li>
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Chunping Wang, Zongtao Liu, Jing Zhang, Lei Chen and Jiangang Lu. 
+        Robust Network Enhancement from Flawed Networks. 
+        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2020.</i>   [<a href="works/enet/tkde2020_robust_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/E-Net">Code</a>]
+        </li>
+
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yifan Luo, Jianrong Tao, Changjie Fan, Zhou Zhao and Jiangang Lu. 
+        NGUARD+: A Attention-based Game Bot Detection Framework via Player Behavior Sequences. 
+        In <i>ACM Transactions on Knowledge Discovery from Data (TKDD), 2020.</i>  [<a href="works/nguard/nguard_plus.pdf">PDF</a>]
+        </li>
+
+        <li style="margin:10px">Jianrong Tao*, <b>Jiarong Xu*</b>, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao (<b>*: Equal Contribution</b>).
+        NGUARD: A Game Bot Detection Framework for NetEase MMORPGs.
+        In <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'18).</i>
+            [<a href="works/nguard/nguard.pdf">PDF</a>] [<a href="https://github.com/fuxiAIlab/NGUARD">Code</a>]
+        </li>
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Junru Chen, Yang Yang, Yizhou Sun, Chunping Wang and Jiangang Lu. 
+        Unsupervised Adversarially-Robust Representation Learning on Graphs.
+        <i>Arxiv, 2020.</i>   [<a href="https://arxiv.org/pdf/2012.02486.pdf">PDF</a>] 
+        </li>
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yizhou Sun, Xin Jiang, Yanhao Wang, Yang Yang, Chunping Wang and Jiangang Lu. 
+        Query-free Black-box Adversarial Attacks on Graphs.
+        <i>Arxiv, 2020.</i>   [<a href="http://arxiv.org/abs/2012.06757.pdf">PDF</a>] 
+        </li>
+ 
+        <li style="margin:10px"><b>Jiarong Xu</b>, Junru Chen, Siqi You, Zhiqing Xiao, Yang Yang and Jiangang Lu.
+        Robustness of deep learning models on graphs: A survey.
+        <i>AI Open.</i>   [<a href="works/robust_survey.pdf">PDF</a>] 
+        </li>
+      
+        <li style="margin:10px">Yiren Shen, Xiaoxian Ou, <b>Jiarong Xu</b>, Guanglin Zhang, Lin Wang and Dapeng Li.
+        Optimal energy storage management for microgrids with ON/OFF co-generator: A two-time-scale approach.
+        In <i>Proceedings of the 3rd IEEE Conference on Signal and Information Processing (GlobalSIP'15).</i>
+            [<a href="works/others/energy.pdf">PDF</a>]
+        </li>
+
+         <li style="margin:10px">Chen Chen, Xueyuan Li, Ye Yang, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu and Jinshui Chen and Jiangang Lu.
+        Parameter Self-Tuning of SISO Compact-Form Model-Free Adaptive Controller based on Neural Network with System Error Set as Input.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/siso.pdf">PDF</a>]
+        </li>
+
+         <li style="margin:10px">Ye Yang, Jinhou Han, Chen Chen, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu, Jinshui Chen and Jiangang Lu.
+        A PSO-LP Cooperative Algorithm for Mixed Integer Nonlinear Programming.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/psolp.pdf">PDF</a>]
+        </li>
+
+<!--          <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
+        Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
+        In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'18).</i>
+        </li>
+
+         <li style="margin:10px"><b>Jiarong Xu</b> and Cao Yu.
+        A Particle Swarm Algorithm with Frog Leaping Behavior for designing optimal PID controller.
+        In <i>Proceedings of Chinese Process Automation Congress (CAC'15).</i>
+        </li>
+ -->
+    </div>
+    <a name="activities"></a>
+	
+
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Academic Experience</h2>
+        </div>
+        <li style="margin:10px">
+        Oral Presentation in AutoSec Workshop @ NDSS’21 (remote presentation)
+        </li>
+      
+        <li style="margin:10px">
+        Oral Presentation in Inscrypt 2020, Guangzhou, China
+        </li>
+
+		<li style="margin:10px">
+        Oral Presentation in ICPADS 2020, Hong Kong, China (remote presentation)
+        </li>
+    </div>
+
+    </div>
+    <a name="award"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Awards</h2>
+        </div>
+        <li style="margin:10px">
+        2020, Excellent Undergraduate of Beijing City
+        <li style="margin:10px">
+        2020, Excellent Undergraduate Thesis of Beijing City
+        </li>
+        <li style="margin:10px">
+        2020, Excellent Undergraduate of Beijing Information Science & Technology University
+        </li>
+        <li style="margin:10px">
+        2020, Excellent Undergraduate Thesis of Beijing Information Science & Technology University
+        </li>
+        <li style="margin:10px">
+        2019, National Scholarship of China
+        </li>
+        <li style="margin:10px">
+        2019, President Scholarship of Beijing Information Science & Technology University
+        </li>
+    </div>
+
+    <hr>
+
+    </div>
+    <a name="contact"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Contact</h2>
+        </div>
+                <div class="col-xs-12 col-md-8">
+                    <ul class="fa-ul">
+                        
+                        <li>
+                            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <span>
+                                <a href="mailto:tianyunzhe@bjtu.edu.cn">tianyunzhe@bjtu.edu.cn</a></span>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+<!-- 
+    <div style="width: 33%; text-align: center; margin: 0 auto;">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
+    </div>
+    <hr> -->
+
+    <footer>
+        <p style="margin:10px;">Created by <a href=""> Yunzhe Tian </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+    </footer>
+    </div> <!-- /container
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
