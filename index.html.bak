@@ -67,7 +67,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <img height="200" src="img/tianyunzhe.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px;margin-top:40px">
+        <img height="200" src="img/tianyunzhe.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px;">
         <p></p>
         <p> I am a first-year graduate student at Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu</a> in <a href="http://infosec.bjtu.edu.cn/">Department of Information Security</a>, <a href="http://computer.bjtu.edu.cn/"> School of Computer Science and Information Technology</a>.
         </p>
@@ -119,77 +119,43 @@
 		<p>We propose an advanced robust adversarial example generation attack, avoiding not to be filtered as well as causing false classification (<a href="https://ieeexplore.ieee.org/document/9359196">Tian et al, ICPADS'20</a>). We first define four basic data correlations called strict linear constraint, approximate linear constraint, addition boundary constraint and zero multiplication constraint. Then, based on embedding multiple data correlations into one constraint matrix from the Pearson analysis, our approach can enable a Hadamard product of the constraint matrix and the sign of gradient matrix to craft perturbations, keeping consistent data correlations. Experimental results on intrusion detection system demonstrate the superiority of our constraint-based adversarial example generation, especially in terms of keeping data constraints. </p>
     </div>
 <br>
-<!--  
+
     <a name="publication"></a>
 
     <div class="container">
         <div class="page-header">
             <h2>Selected Publication List</h2>
         </div>
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Shiliang Pu, Yao Fu, Jun Feng, Weihao Jiang, Jiangang Lu and Cunping Wang.
-        NetRL: Task-aware Network Denoising via Deep Reinforcement Learning. 
-        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021.</i>  [<a href="works/tkde2021_netrl_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/NetRL">Code</a>]
+        <li style="margin:10px"><b>Yunzhe Tian</b>, Yike Li, Yingxiao Xiang, Wenjia Niu, Endong Tong, and Jiqiang Liu. Curricular Reinforcement Learning for Robust Policy in Unmanned CarRacing Game. In <i>NDSS 2021, Workshop on Automotive and Autonomous Vehicle Security (AutoSec)</i>.
         </li>
       
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Chunping Wang, Zongtao Liu, Jing Zhang, Lei Chen and Jiangang Lu. 
-        Robust Network Enhancement from Flawed Networks. 
-        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2020.</i>   [<a href="works/enet/tkde2020_robust_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/E-Net">Code</a>]
+        <li style="margin:10px"><b>Yunzhe Tian</b>, Jiqiang Liu, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Wei Wang. Towards Revealing Parallel Adversarial Attack on Politician Socialnet of Graph Structure. In <i> Security and Communication Networks (SCN), 2021 </i>.
         </li>
 
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yifan Luo, Jianrong Tao, Changjie Fan, Zhou Zhao and Jiangang Lu. 
-        NGUARD+: A Attention-based Game Bot Detection Framework via Player Behavior Sequences. 
-        In <i>ACM Transactions on Knowledge Discovery from Data (TKDD), 2020.</i>  [<a href="works/nguard/nguard_plus.pdf">PDF</a>]
+        <li style="margin:10px">Endong Tong, Wenjia Niu, <b>Yunzhe Tian</b>, Jiqiang Liu, Thar Baker, Sandeep Verma, and Zheli Liu. A Hierarchical Energy-efficient Service Selection Approach with Qos Constraints for Internet of Things. In <i> IEEE Transactions on Green Communications and Networking (TGCN), 2021</i>.
         </li>
-
-        <li style="margin:10px">Jianrong Tao*, <b>Jiarong Xu*</b>, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao (<b>*: Equal Contribution</b>).
-        NGUARD: A Game Bot Detection Framework for NetEase MMORPGs.
-        In <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'18).</i>
-            [<a href="works/nguard/nguard.pdf">PDF</a>] [<a href="https://github.com/fuxiAIlab/NGUARD">Code</a>]
-        </li>
-      
-        <li style="margin:10px"><b>Jiarong Xu</b>, Junru Chen, Yang Yang, Yizhou Sun, Chunping Wang and Jiangang Lu. 
-        Unsupervised Adversarially-Robust Representation Learning on Graphs.
-        <i>Arxiv, 2020.</i>   [<a href="https://arxiv.org/pdf/2012.02486.pdf">PDF</a>] 
+		<li style="margin:10px">
+		Yalun Wu, Minglu Song, Yike Li, <b>Yunzhe Tian</b>, Endong Tong, Wenjia Niu, Bowei Jia, Haixiang Huang, Qiong Li and Jiqiang Liu. Improving Convolutional Neural Network-based Webshell Detection through Reinforcement Learning. In <i>The 23rd International Conference on Information and Communications Security (ICICS 2021), 2021</i>.
+		</li>
+		<li style="margin:10px">
+		Tong Chen, Yingxiao Xiang, Yike Li, <b>Yunzhe Tian</b>, Endong Tong, Wenjia Niu, Jiqiang Liu, Li Gang and Qi Alfred Chen. Protecting Reward Function of Reinforcement Learning via Minimal and Non-catastrophic Adversarial Trajectory. In <i>The 40th International Symposium on Reliable Distributed Systems (SRDS 2021), 2021</i>.
+		</li>
+        <li style="margin:10px">
+		王硕汝, 牛温佳, 童恩栋, 陈彤, 李赫, <b>田蕴哲</b>, 刘吉强, 韩臻, 李浥东. 强化学习离线策略评估研究综述. <i>计算机学报, 2021</i>.
+		</li>
+        <li style="margin:10px">Xinyu Huang, <b>Yunzhe Tian</b>, Yifei He, Endong Tong, Wenjia Niu, Chenyang Li, Jiqiang Liu, and Liang Chang. Exposing Spoofing Attack on Flocking-based Unmanned Aerial Vehicle Cluster: A Threat to Swarm Intelligence. In <i>Security and Communication Networks (SCN), 2020</i>.
         </li>
       
-        <li style="margin:10px"><b>Jiarong Xu</b>, Yizhou Sun, Xin Jiang, Yanhao Wang, Yang Yang, Chunping Wang and Jiangang Lu. 
-        Query-free Black-box Adversarial Attacks on Graphs.
-        <i>Arxiv, 2020.</i>   [<a href="http://arxiv.org/abs/2012.06757.pdf">PDF</a>] 
+        <li style="margin:10px">Bowei Jia, <b>Yunzhe Tian</b>, Di Zhao, Xiaojin	Wang, Chenyang Li, Wenjia Niu, Endong Tong,	and Jiqiang Liu. Bidirectional Rnn-based Few-shot Training for Detecting Multi-stage Attack. In <i>The 16th International Conference on Information Security and Cryptology (INSCRYPT 2020), 2020 </i>.
+        </li>
+      
+        <li style="margin:10px"><b>Yunzhe Tian</b>, Yingdi Wang, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Jiqiang Liu. Exploring Data Correlation	between Feature Pairs for Generating Constraint-based Adversarial Examples. In <i>IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS 2020), 2020. </i>
         </li>
  
-        <li style="margin:10px"><b>Jiarong Xu</b>, Junru Chen, Siqi You, Zhiqing Xiao, Yang Yang and Jiangang Lu.
-        Robustness of deep learning models on graphs: A survey.
-        <i>AI Open.</i>   [<a href="works/robust_survey.pdf">PDF</a>] 
+        <li style="margin:10px">Qinghua Wen, <b>Yunzhe Tian</b>, Xiaohui Zhang, Ruoyun Hu, Jinsong Wang, Lei Hou, and Juanzi Li. Type-aware Open Information Extraction	via Graph Augmentation Model. In <i> China Conference on Knowledge Graph and Semantic Computing (CCKS 2020), 2020 </i>.
         </li>
       
-        <li style="margin:10px">Yiren Shen, Xiaoxian Ou, <b>Jiarong Xu</b>, Guanglin Zhang, Lin Wang and Dapeng Li.
-        Optimal energy storage management for microgrids with ON/OFF co-generator: A two-time-scale approach.
-        In <i>Proceedings of the 3rd IEEE Conference on Signal and Information Processing (GlobalSIP'15).</i>
-            [<a href="works/others/energy.pdf">PDF</a>]
-        </li>
 
-         <li style="margin:10px">Chen Chen, Xueyuan Li, Ye Yang, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu and Jinshui Chen and Jiangang Lu.
-        Parameter Self-Tuning of SISO Compact-Form Model-Free Adaptive Controller based on Neural Network with System Error Set as Input.
-        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
-            [<a href="works/others/siso.pdf">PDF</a>]
-        </li>
-
-         <li style="margin:10px">Ye Yang, Jinhou Han, Chen Chen, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu, Jinshui Chen and Jiangang Lu.
-        A PSO-LP Cooperative Algorithm for Mixed Integer Nonlinear Programming.
-        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
-            [<a href="works/others/psolp.pdf">PDF</a>]
-        </li>
-
-        <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
-        Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
-        In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'18).</i>
-        </li>
-
-         <li style="margin:10px"><b>Jiarong Xu</b> and Cao Yu.
-        A Particle Swarm Algorithm with Frog Leaping Behavior for designing optimal PID controller.
-        In <i>Proceedings of Chinese Process Automation Congress (CAC'15).</i>
-        </li>
- -->
     </div>
     <a name="activities"></a>
 	
