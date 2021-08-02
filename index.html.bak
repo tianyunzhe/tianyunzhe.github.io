@@ -124,7 +124,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h2>Selected Publication List</h2>
+            <h2>Publication List</h2>
         </div>
         <li style="margin:10px"><b>Yunzhe Tian</b>, Yike Li, Yingxiao Xiang, Wenjia Niu, Endong Tong, and Jiqiang Liu. Curricular Reinforcement Learning for Robust Policy in Unmanned CarRacing Game. In <i>NDSS 2021, Workshop on Automotive and Autonomous Vehicle Security (AutoSec)</i>.
         </li>
