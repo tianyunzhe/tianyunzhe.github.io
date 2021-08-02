@@ -95,7 +95,7 @@
           
           Existing automatic attack methods are developed for per-node attacks, which can only be utilized for multi-node attacks in a sequential way. However, due to the overlook of perturbation influence between different per-node attacks, existing sequential method does not guarantee a global attack success rate for all target nodes, under a fixed budget of perturbation. Motivated by this, we propose a parallel adversarial attack framework on node classification (<a href="https://downloads.hindawi.com/journals/scn/2021/6631247.pdf">Tian et al, SCN'21</a>). Firstly, based on FGA and NETTACK, we redesign new loss function and objective function aimed at multi-target parallel adversarial attack, and propose node filtering-based P-FGA and P-NETTACK. Then, through constructing intersection and supplement mechanisms of perturbations, we integrate P-FGA and P-NETTACK in a unified framework, finally realizing effective parallel adversarial attacks.<br><br>
           
-          Besides, as adversarial attack poses potential threats to GNN models, it is very urgent to improve their robustness. Recently, we are investigating to improve the robustness of GNN via curricular adversarial training, which will be the main part of my Master's Dissertation. <br><br>
+          
          </p>
     </div>
 
@@ -105,8 +105,8 @@
         </div>
         <img width="450" src="works/CarRacing_with_title.png" align="left" style="margin-left:20px;margin-right:20px">
         <p> Due to the gap between lab simulation and real world, robust reinforcement learning has been a challenging problem. Existing efforts approached this problem through performing random environmental perturbation in learning process. However, one cannot guarantee perturbation is positive. Bad ones might bright failures to reinforcement learning. </p>
-		<p>In our recent work, we treat robust reinforcement learning as a multi-task reinforcement learning problem, and propose a curricular robust reinforcement learning approach. We first present a GAN-based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Further, with these progressive tasks, we can realize curricular learning and finally get a robust policy. </p>
-		<p>Demo we implemented in unmanned CarRacing game validates the effectiveness (<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf">Tian et al, AutoSec'21</a>). And we also demonstrate our method in multiple environments of OpenAI toolkits with MuJoCo physics simulator, such as Hopper, HalfCheetah and InvertedPendulum. </p>
+		<p>In our recent work, we treat robust reinforcement learning as a multi-task reinforcement learning problem, and propose a curricular robust reinforcement learning approach (<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf">Tian et al, AutoSec'21</a>). We first present a GAN-based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Further, with these progressive tasks, we can realize curricular learning and finally get a robust policy. </p>
+		<p>Demo we implemented in unmanned CarRacing game validates the effectiveness. And we also demonstrate our method in multiple environments of OpenAI toolkits with MuJoCo physics simulator, such as Hopper, HalfCheetah and InvertedPendulum. </p>
     </div>
 
 	<div class="container">
