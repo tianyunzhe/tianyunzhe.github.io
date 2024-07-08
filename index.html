@@ -69,17 +69,61 @@
       <div class="container">
         <img height="200" src="img/Yunzhe Tian.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px;">
         <p></p>
-        <p> I am a first-year Ph.D. student at Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu</a> in <a href="http://infosec.bjtu.edu.cn/">Department of Information Security</a>, <a href="http://computer.bjtu.edu.cn/"> School of Computer Science and Information Technology</a>.
+        <p> I am a second-year Ph.D. student at Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu</a> in <a href="http://infosec.bjtu.edu.cn/">Department of Information Security</a>, <a href="http://computer.bjtu.edu.cn/"> School of Computer Science and Information Technology</a>.
         </p>
 		<p>I obtained my bachelor degree at Beijing Information Science & Technology University in 2020. And, I fortunately have been visiting Tsinghua University (co-advised by <a href="http://keg.cs.tsinghua.edu.cn/persons/ljz/">Prof. Juanzi Li</a> and Dr. Peng Zhang) from Nov, 2018 to June, 2020. During my time at Tsinghua, I completed my undergraduate thesis "Research on News Entity Open Relation Extraction", awarded Excellent Undergraduate Thesis of Beijing. </p>
-        <p>My research interests lie in (1) <b> AI security </b> including adversarial attack, robust graph learning and robust reinforcement learning. (2) <b> Explainable AI </b> for wireless communication systems. Here is my <a href="works/CV/CV_Yunzhe Tian.pdf"> CV </a>.</p>
+        <p>My research interests lie in (1) <b> Brain-inspired computing </b> with a focus on applications of spiking neural networks in AI systems; (2) <b> Explainable AI </b> to enhance the transparency and trustworthiness of AI systems; (3) <b>AI security </b>  including adversarial attack, backdoor attack, and privacy attack on AI systems. Here is my <a href="works/CV/CV_TIAN-20240708.pdf"> CV </a>.</p>
         <p> <b> Email:</b> tianyunzhe {at} bjtu [dot] edu [dot] cn </p>
 
+    <!-- My research interests lie in (1) <b> AI security </b> including adversarial attack, robust learning. (2) <b> Explainable AI </b> for wireless communication systems. (3) <b> Brain-inspired Computing </b> with Spiking Neural Network.-->
       </div>
     </div>
 
     <a name="research"></a>
 
+
+    <div class="container">
+      <div class="page-header">
+          <h2>Selected Research Work</h2>
+      </div>
+    
+      <div class="page-header">
+          <h4>Toward Learning Model-agnostic Explanations for Deep Learning-based Signal Modulation Classifiers</h4>
+      </div>
+      <img width="450" src="works/XAI-3.png" align="left" style="margin-left:20px;margin-right:20px" >
+    
+      <p>
+        Recent advances in deep learning (DL) have brought tremendous gains in signal modulation classification. However, DL-based classifiers lack transparency and interpretability, which raises concern about model's reliability and hinders the wide deployment in real-word applications. While explainable methods have recently emerged, little has been done to explain the DL-based signal modulation classifiers.<br><br> 
+        
+        In this work (<a href="https://ieeexplore.ieee.org/abstract/document/10460345">Tian et al, TR'24</a>), we propose a novel model-agnostic explainer, Model-Agnostic Signal modulation classification Explainer (MASE), which provides explanations for the predictions of black-box modulation classifiers. With the subsequence-based signal interpretable representation and in-distribution local signal sampling, MASE learns a local linear surrogate model to derive a class activation vector, which assigns importance values to the timesteps of signal instance. Besides, the constellation-based explanation visualization is adopted to spotlight the important signal features relevant to model prediction. We furthermore propose the first generic quantitative explanation evaluation framework for signal modulation classification to automatically measure the faithfulness, sensitivity, robustness, and efficiency of explanations. Extensive experiments are conducted on two real-world datasets with four black-box signal modulation classifiers. The quantitative results indicate MASE outperforms two state-of-the-art methods with 44.7% improvement in faithfulness, 30.6% improvement in robustness, and 44.1% decrease in sensitivity. Through qualitative visualizations, we further demonstrate the explanations of MASE are more human interpretable and provide better understanding into the reliability of black-box model decisions.        
+       </p>
+  </div>
+
+  <div class="container">
+      <div class="page-header">
+          <h4>Mitigating Overfitting for Deep Learning-based Aging-related Bug Prediction via Brain-inspired Regularization</h4>
+      </div>
+      <img width="450" src="works/SNN.png" align="left" style="margin-left:20px;margin-right:20px">
+      <p> To alleviate the impact of software aging, primarily induced by aging-related bugs (ARBs), ARB prediction has drawn considerable interest from both academia and industry. Recent advances in deep learning (DL) have brought tremendous gains in ARB prediction. However, due to the limited size and extreme class imbalance in ARB datasets, conventional artificial neural networks (ANNs) are susceptible to overfitting, resulting in a suboptimal generalization performance. <br><br> 
+        
+        
+        In this paper (<a href="https://ieeexplore.ieee.org/abstract/document/10301319">Tian et al, ISSREW'23</a>), we take advantage of sparse and binary nature of spiking communication in spiking neural networks (SNNs), which inherently provides a brain-inspired regularization to effectively alleviate overfitting. We propose the first spiking convolutional neural network-based ARB prediction model (ARB-SCNN), comprising a spiking encoder followed by a classifier and utilizing the Leaky Integrate-and-Fire neuron as the basic spiking computing unit. Considering the spatial-temporal dynamics and the non-differentiability nature, we develop a dedicated training framework for ARB-SCNN, which incorporates the rate coding-based mean square error (MSE) loss and employs the backpropagation through time with the surrogate gradient. Finally, extensive experiments on two real-world ARB datasets demonstrate that our ARB-SCNN effectively mitigates overfitting, improving generalization performance by 7.82% compared to the state-of-the-art DL-based classifiers, and it exhibits up to 5× better computational energy efficiency.
+        </p>
+  </div>
+
+<div class="container">
+      <div class="page-header">
+          <h4>Robust Reinforcement Learning via Progressive Task Sequence</h4>
+      </div>
+      <img width="450" src="works/IJCAI.png" align="left" style="margin-left:20px;margin-right:20px">
+      <p>  Robust reinforcement learning (RL) has been a challenging problem in reliable aspects due to the gap between laboratory simulation and real world. Existing efforts typically address the robust RL problem by solving a maxmin problem, which maximizes the cumulative reward under the worst-possible perturbations. However, the worst-case formulation either leads to overly conservative solutions or unstable training process, which further affects the policy robustness. <br><br> 
+
+        Motivated by this, in our recent work (<a href="https://www.ijcai.org/proceedings/2023/0051.pdf">Li et al, IJCAI'23</a>), we tackle this problem from both formulation definition and algorithm design. First, we formulate the robust RL as a max-expectation optimization problem, where the goal is to an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL to solve this max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments demonstrate that DRRL exhibits significant performance on the unmanned CarRacing game and multiple high-dimensional MuJoCo environments.  </p>
+  </div>
+<br>
+
+
+<!-- 
     <div class="container">
         <div class="page-header">
             <h2>Selected Research Work</h2>
@@ -118,15 +162,23 @@
 		<p> Unfortunately, the fine data perturbation of adversarial examples ignores to keep potential data correlations between feature pairs. Thus, such adversarial examples will be easily filtered by configuring data correlations as basic filtering rules.</p>
 		<p>We propose an advanced robust adversarial example generation attack, avoiding not to be filtered as well as causing false classification (<a href="https://ieeexplore.ieee.org/document/9359196">Tian et al, ICPADS'20</a>). We first define four basic data correlations called strict linear constraint, approximate linear constraint, addition boundary constraint and zero multiplication constraint. Then, based on embedding multiple data correlations into one constraint matrix from the Pearson analysis, our approach can enable a Hadamard product of the constraint matrix and the sign of gradient matrix to craft perturbations, keeping consistent data correlations. Experimental results on intrusion detection system demonstrate the superiority of our constraint-based adversarial example generation, especially in terms of keeping data constraints. </p>
     </div>
-<br>
+<br> -->
 
     <a name="publication"></a>
 
     <div class="container">
         <div class="page-header">
             <h2>Publication List</h2>
-        </div>        
-        <li style="margin:10px">Yike Li, <b>Yunzhe Tian</b> (co-first author), Endong Tong, Wenjia Niu, and Jiqiang Liu. Robust Reinforcement Learning via Progressive Task Sequence. In <i>Proceedings of the 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023), 2023</i>.
+        </div>   
+        
+        <li style="margin:10px"> <b>Yunzhe Tian</b>, Dongyue Xu, Endong Tong, Rui Sun, Kang Chen, Yike Li, Thar Baker, Wenjia Niu, and Jiqiang Liu. Toward Learning Model-Agnostic Explanations for Deep Learning-Based Signal Modulation Classifiers.  In <i>IEEE Transactions on Reliability, 2024.</i>.
+        </li>
+
+        <li style="margin:10px"><b>Yunzhe Tian</b>, Yike Li, Kang Chen, Endong Tong, Wenjia Niu, Jiqiang Liu, Fangyun Qin, Zheng Zheng. Mitigating Overfitting for Deep Learning-based Aging-related Bug Prediction via Brain-inspired Regularization in Spiking Neural Networks.  In <i> The IEEE 34th International Symposium on Software Reliability Engineering Workshops (ISSREW 2023), 2023.</i>
+        </li>
+
+
+        <li style="margin:10px">Yike Li, <b>Yunzhe Tian</b> (co-first author), Endong Tong, Wenjia Niu, and Jiqiang Liu. Robust Reinforcement Learning via Progressive Task Sequence. In <i>The Proceedings of the 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023), 2023</i>.
         </li>
 
         <li style="margin:10px"><b>Yunzhe Tian</b>, Yike Li, Yingxiao Xiang, Wenjia Niu, Endong Tong, and Jiqiang Liu. Curricular Reinforcement Learning for Robust Policy in Unmanned CarRacing Game. In <i>NDSS 2021, Workshop on Automotive and Autonomous Vehicle Security (AutoSec)</i>.
@@ -136,6 +188,14 @@
         </li>
         
         <li style="margin:10px"><b>Yunzhe Tian</b>, Yingdi Wang, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Jiqiang Liu. Exploring Data Correlation	between Feature Pairs for Generating Constraint-based Adversarial Examples. In <i>The IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS 2020), 2020. </i>
+        </li>
+
+        <li style="margin:10px">徐冬月,  <b>田蕴哲</b>, 陈康, 李轶珂, 吴亚伦, 童恩栋, 牛温佳, 刘吉强, 史忠植. 面向信号调制识别的对抗攻击与防御综述. <i>计算机研究与发展, 2024. </i>
+        </li>
+
+        <li style="margin:10px">Jiayin Song, Yike Li, <b>Yunzhe Tian</b>, Xingyu Wu, Qiong Li, Endong Tong, Wenjia Niu, Zhenguo Zhang, and Jiqiang Li.
+          Knowledge-Driven Backdoor Removal in Deep Neural Networks via Reinforcement Learning. 
+         In <i>The 17th International Conference on Knowledge Science, Engineering and Management (KSEM 2024), 2024.</i>.
         </li>
 
         <li style="margin:10px">Yike Li, Wenjia Niu, <b>Yunzhe Tian</b>, Tong Chen, Zhiqiang Xie, Yalun Wu, Yingxiao Xiang, Endong Tong, Thar Baker, and Jiqiang Liu. Multiagent Reinforcement Learning-Based Signal Planning for Resisting Congestion Attack in Green Transportation. In <i>IEEE Transactions on Green Communications and Networking (TGCN), 2022</i>.
@@ -216,6 +276,9 @@
         </div>
         <li style="margin:10px">
           2023, Fourth Place in IEEE Trojan Removal Competition (IEEE TRC’22), associated with the ICLR’23 workshop.
+        </li>
+        <li style="margin:10px">
+          2023, Excellent Team in DataCon2023 大数据安全分析竞赛.
         </li>
         <li style="margin:10px">
           2022, Excellent Graduate of Beijing Jiaotong University
