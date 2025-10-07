@@ -93,7 +93,7 @@
       </div>
     
       <div class="page-header">
-          <h4>Toward Learning Model-agnostic Explanations for Deep Learning-based Signal Modulation Classifiers</h4>
+          <h4><u>AI Explainability:</u> Toward Learning Model-agnostic Explanations for Deep Learning-based Signal Modulation Classifiers</h4>
       </div>
       <img width="450" src="works/XAI-3.png" align="left" style="margin-left:20px;margin-right:20px" >
     
@@ -104,7 +104,32 @@
        </p>
   </div>
 
+
+
   <div class="container">
+    <div class="page-header">
+        <h4><u>AI Robustness:</u> Robust Reinforcement Learning via Progressive Task Sequence</h4>
+    </div>
+    <img width="450" src="works/IJCAI.png" align="left" style="margin-left:20px;margin-right:20px">
+    <p>  Robust reinforcement learning (RL) has been a challenging problem in reliable aspects due to the gap between laboratory simulation and real world. Existing efforts typically address the robust RL problem by solving a maxmin problem, which maximizes the cumulative reward under the worst-possible perturbations. However, the worst-case formulation either leads to overly conservative solutions or unstable training process, which further affects the policy robustness. <br><br> 
+
+      Motivated by this, in our recent work (<a href="https://www.ijcai.org/proceedings/2023/0051.pdf">Li and Tian et al, IJCAI'23</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9837021">Li and Tian et al, TST'22</a>, and  <a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-98/">Tian et al, AutoSec'21</a>), we tackle this problem from both formulation definition and algorithm design. First, we formulate the robust RL as a max-expectation optimization problem, where the goal is to an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL to solve this max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments demonstrate that DRRL exhibits significant performance on the unmanned CarRacing game and multiple high-dimensional MuJoCo environments.  </p>
+</div>
+
+  <div class="container">
+    <div class="page-header">
+        <h4><u>Brain-inspired Computing:</u> Towards Label-Efficient Aging-related Bug Prediction with Spiking  Convolutional Neural Networks</h4>
+    </div>
+    <img width="450" height="400" src="works/TETC.png" align="left" style="margin-left:20px;margin-right:20px">
+
+    <p>
+      Recent advances in Deep Learning (DL) have enhanced Aging-Related Bug (ARB) prediction for mitigating software aging. However, DL-based ARB prediction models face a dual challenge: overcoming overfitting to enhance generalization and managing the high labeling costs associated with extensive data requirements. <br><br> 
+      
+      To address the first issue, in our recent work (<a href="https://ieeexplore.ieee.org/abstract/document/10852596/">Tian et al, TETC'25</a>, and <a href="https://ieeexplore.ieee.org/abstract/document/10301319">Tian et al, ISSREW'23</a>), we utilize the sparse and binary nature of spiking communication in Spiking Neural Networks (SNNs), which inherently provides brain-inspired regularization to effectively alleviate overfitting. Therefore, we propose a Spiking Convolutional Neural Network (SCNN)-based ARB prediction model along with a training framework that handles the model’s spatial-temporal dynamics and non-differentiable nature. To reduce labeling costs, we introduce a Bio-inspired and Diversity-aware Active Learning framework (BiDAL), which prioritizes highly informative and diverse samples, enabling more efficient usage of the limited labeling budget. This framework incorporates bio-inspired uncertainty to enhance informativeness measurement along with using a diversity-aware selection strategy based on clustering to prevent redundant labeling. Experiments on three ARB datasets show that ARB-SCNN effectively reduces overfitting, improving generalization performance by 6.65% over other DLbased classifiers. Additionally, BiDAL boosts label efficiency for ARB-SCNN training, outperforming four state-of-the-art active learning methods by 4.77% within limited labeling budgets.
+      </p>
+</div>
+
+  <!-- <div class="container">
       <div class="page-header">
           <h4>Mitigating Overfitting for Deep Learning-based Aging-related Bug Prediction via Brain-inspired Regularization</h4>
       </div>
@@ -114,17 +139,8 @@
         
         In this paper (<a href="https://ieeexplore.ieee.org/abstract/document/10301319">Tian et al, ISSREW'23</a>), we take advantage of sparse and binary nature of spiking communication in spiking neural networks (SNNs), which inherently provides a brain-inspired regularization to effectively alleviate overfitting. We propose the first spiking convolutional neural network-based ARB prediction model (ARB-SCNN), comprising a spiking encoder followed by a classifier and utilizing the Leaky Integrate-and-Fire neuron as the basic spiking computing unit. Considering the spatial-temporal dynamics and the non-differentiability nature, we develop a dedicated training framework for ARB-SCNN, which incorporates the rate coding-based mean square error (MSE) loss and employs the backpropagation through time with the surrogate gradient. Finally, extensive experiments on two real-world ARB datasets demonstrate that our ARB-SCNN effectively mitigates overfitting, improving generalization performance by 7.82% compared to the state-of-the-art DL-based classifiers, and it exhibits up to 5× better computational energy efficiency.
         </p>
-  </div>
+  </div> -->
 
-<div class="container">
-      <div class="page-header">
-          <h4>Robust Reinforcement Learning via Progressive Task Sequence</h4>
-      </div>
-      <img width="450" src="works/IJCAI.png" align="left" style="margin-left:20px;margin-right:20px">
-      <p>  Robust reinforcement learning (RL) has been a challenging problem in reliable aspects due to the gap between laboratory simulation and real world. Existing efforts typically address the robust RL problem by solving a maxmin problem, which maximizes the cumulative reward under the worst-possible perturbations. However, the worst-case formulation either leads to overly conservative solutions or unstable training process, which further affects the policy robustness. <br><br> 
-
-        Motivated by this, in our recent work (<a href="https://www.ijcai.org/proceedings/2023/0051.pdf">Li et al, IJCAI'23</a>), we tackle this problem from both formulation definition and algorithm design. First, we formulate the robust RL as a max-expectation optimization problem, where the goal is to an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL to solve this max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments demonstrate that DRRL exhibits significant performance on the unmanned CarRacing game and multiple high-dimensional MuJoCo environments.  </p>
-  </div>
 <br>
 
 
@@ -200,8 +216,25 @@
         <li style="margin:10px"><b>Yunzhe Tian</b>, Yingdi Wang, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Jiqiang Liu. Exploring Data Correlation	between Feature Pairs for Generating Constraint-based Adversarial Examples. In <i>The IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS 2020), 2020. </i>
         </li>
 
-        <li style="margin:10px">徐冬月,  <b>田蕴哲</b>, 陈康, 李轶珂, 吴亚伦, 童恩栋, 牛温佳, 刘吉强, 史忠植. 面向信号调制识别的对抗攻击与防御综述. <i>计算机研究与发展, 2024. </i>
+        <li style="margin:10px">徐冬月,  <b>田蕴哲</b>, 陈康, 李轶珂, 吴亚伦, 童恩栋, 牛温佳, 刘吉强, 史忠植. 面向信号调制识别的对抗攻击与防御综述. <i>计算机研究与发展, 2025. </i>
         </li>
+
+        <li style="margin:10px">Jingqi Jia,  <b>Yunzhe Tian</b>, Xinyi Zhao, Xiangyu Shi, Ping Ye,
+        Xiaoshu Cui, Yanfeng Gu, Xingyu Wu, Dianjing Cheng, and Wenjia Niu.
+        Graph Neural Network-Enhanced Semantic Invariant
+        Robust Watermarking for Large Language Models. In <i>The IEEE 9th International Conference on Data Science in Cyberspace (DSC 2025), 2025</i>. <b>(Outstanding Paper)</b> 
+        </li>
+
+
+        <li style="margin:10px">Xingyu Wu, <b>Yunzhe Tian</b>, Yuanwan Chen, Ping Ye, Xiaoshu Cui, Jingqi Jia, Shouyang Li, Jiqiang Liu, and Wenjia Niu.
+        CurriculumPT: LLM-Based Multi-Agent Autonomous Penetration Testing with Curriculum-Guided Task Scheduling.
+        In <i>Applied Sciences, 2025</i>.</li>
+
+        
+        <li style="margin:10px">Jiayin Song, Yike Li, <b>Yunzhe Tian</b>, Haoxuan Ma, Honglei Li, Jie Zuo, Jiqiang Liu, and Wenjia Niu.
+        Investigating the bugs in reinforcement learning programs: Insights from Stack Overflow and GitHub.
+        In <i>Automated Software Engineering, 2025</i>.</li>
+
 
         <li style="margin:10px">Jiayin Song, Yike Li, <b>Yunzhe Tian</b>, Xingyu Wu, Qiong Li, Endong Tong, Wenjia Niu, Zhenguo Zhang, and Jiqiang Li.
           Knowledge-Driven Backdoor Removal in Deep Neural Networks via Reinforcement Learning. 
@@ -264,6 +297,16 @@
             <h2>Academic Experience</h2>
         </div>
 
+
+        <li style="margin:10px">
+          <b>Program Committee (PC) Member</b> of AAAI 2026, DSN 2025.
+        </li>
+        <li style="margin:10px">
+          <b>Journal Reviewer</b> of Journal of Information and Knowledge Management (JIKM), Journal of Supercomputing, Internet of Things (IoT).
+        </li>
+        
+
+
         <li style="margin:10px">
           Oral Presentation in AUTODRIVING TECH TALK @ BCTF 2022
         </li>
@@ -291,20 +334,28 @@
       </div>
       
       <li style="margin:10px">
-        <b>Teaching Assistant</b> (Feb. 2023 - Jun. 2023) </br>
+        <b>Teaching Assistant</b> <i>(Feb. 2023 - Jun. 2023)</i> </br>
         M602031B: Situation Awareness of Cyberspace Security  
       </li>
       <li style="margin:10px">
-        <b>Teaching Assistant</b> (Jun. 2023 - Jul. 2023) </br>
+        <b>Teaching Assistant</b> <i>(Jun. 2023 - Jul. 2023)</i> </br>
         80S504Q: Information Security Professional Practice and Training  
       </li>
       <li style="margin:10px">
-        <b>Teaching Assistant</b> (Feb. 2024 - Jun. 2024) </br>
+        <b>Teaching Assistant</b> <i>(Feb. 2024 - Jun. 2024)</i> </br>
         M402055B: Artificial Intelligence Security </br>
       </li>
       <li style="margin:10px">
+        <b>Guest Lecturer</b> in Deakin Cyber 2025 Seminar Series <i>(Mar. 2025)</i> </br>
+        Towards Revealing Persistent Universal Attacks in Continual Learning </br>
+      </li>
+      <li style="margin:10px">
+        <b>Guest Lecturer</b> in Seminar on Cybersecurity under Global Security Intiative <i>(Jun. 2025)</i> </br>
+        Is AI Safe? Adversarial Attack and Defense  </br>
+      </li>
+      <li style="margin:10px">
         <b>Research Advising and Mentoring</b>  </br>
-        Team leader for the XAI group, a subgroup within the <a href="http://jxd308.cn/">THETA Lab</a> led by Prof. Wenjia Niu. </br>
+        Team leader for the TrustAI group, a subgroup within the <a href="http://bjtu-theta.top/">THETA Lab</a> led by Prof. Wenjia Niu. </br>
         <ul>
         <li style="margin:5px; margin-left: -30px;">
           Sep. 2021 - Jul. 2024, Shiyao Chen (BJTU M.S., now at CMCC)  </br>
@@ -345,6 +396,10 @@
         </li>
         <li style="margin:10px">
           2023, Excellent Team in DataCon Big Data Security Analysis Competition, AI security Track .
+        </li>
+
+        <li style="margin:10px">
+          2022, Third Place in 创客行动-2022 长城互联网赛区“大数据应用”挑战赛 (coverage:  <a href="https://mp.weixin.qq.com/s/RWPdrF_s2-ZGVfZltqHhgg">祝贺实验室获得创客行动-2022大数据应用挑战赛长城互联网赛区通道二赛题组三等奖</a>)
         </li>
         <li style="margin:10px">
           2022, Excellent Graduate of Beijing Jiaotong University
@@ -401,6 +456,11 @@
                             <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
                             <span>
                                 <a href="mailto:tianyunzhe@bjtu.edu.cn">tianyunzhe@bjtu.edu.cn</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <span>
+                                <a href="mailto:tianyz1999@gmail.com">tianyz1999@gmail.com</a></span>
                         </li>
                     </ul>
                 </div>
